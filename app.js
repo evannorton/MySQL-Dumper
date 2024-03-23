@@ -30,13 +30,13 @@ const dump = ({ host, user, password, database }) => {
     dateString += String(date.getMonth() + 1).padStart(2, "0");
     dateString += "-";
     dateString += String(date.getDate()).padStart(2, "0");
-    dateString += " ";
+    dateString += "_";
     dateString += String(date.getHours()).padStart(2, "0");
     dateString += "-";
     dateString += String(date.getMinutes()).padStart(2, "0");
     dateString += "-";
     dateString += String(date.getSeconds()).padStart(2, "0");
-    const Key = `${database}-${dateString}.sql`;
+    const Key = `${database}_${dateString}.sql`;
     console.log(`making dump ${Key}`);
     const dumpToFile = join("dumps", Key);
     mysqldump({
