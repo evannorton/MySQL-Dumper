@@ -1,0 +1,18 @@
+{
+    "databases": [
+        {
+            "host": "localhost1",
+            "user": "root1",
+            "password": "pass1",
+            "database": "db1",
+            "interval": 10000
+        },
+        {
+            "host": "localhost2",
+            "user": "root2",
+            "password": "pass2",
+            "database": "db2",
+            "interval": 20000
+        }
+    ]
+}
