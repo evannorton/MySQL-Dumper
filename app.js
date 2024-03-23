@@ -27,9 +27,9 @@ const dump = ({ host, user, password, database }) => {
     let dateString = "";
     dateString += date.getFullYear();
     dateString += "-";
-    dateString += date.getMonth() + 1;
+    dateString += String(date.getMonth() + 1).padStart(2, "0");
     dateString += "-";
-    dateString += date.getDate();
+    dateString += String(date.getDate()).padStart(2, "0");
     dateString += " ";
     dateString += String(date.getHours()).padStart(2, "0");
     dateString += "-";
