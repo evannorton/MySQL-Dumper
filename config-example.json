@@ -1,5 +1,5 @@
 {
-    "databases": [
+    "connections": [
         {
             "host": "localhost1",
             "user": "root1",
