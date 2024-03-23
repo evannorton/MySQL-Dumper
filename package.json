@@ -3,6 +3,8 @@
         "start": "node app.js"
     },
     "dependencies": {
+        "@aws-sdk/client-s3": "^3.540.0",
+        "dotenv": "^16.4.5",
         "mysqldump": "^3.2.0"
     }
 }
